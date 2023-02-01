@@ -1,0 +1,17 @@
+{
+    "name": "vdjam/factures",
+    "autoload": {
+        "psr-4": {
+            "Fac\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "valouz23",
+            "email": "v.djamei@ecole-ipssi.net"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.21"
+    }
+}
