@@ -40,7 +40,7 @@ if ($conn_db->query($sql_clients) == TRUE){
 require_once 'vendor/autoload.php';
 require_once 'vendor/fakerphp/faker/src/autoload.php';
 
-for($i=0; $i<15; $i++){
+for($i=0; $i<20; $i++){
     $faker = Faker\Factory::create();
     $name = $faker->name();
     $email = $faker->email();
@@ -58,7 +58,7 @@ for($i=0; $i<15; $i++){
 for($i=0; $i <60; $i++){
     $faker = Faker\Factory::create();
     $amount = random_int(10,500);
-    $user_id = random_int(0,14);
+    $user_id = random_int(0,19);
     $statut = $faker->randomElements(['true', 'false']);
     $sql = "INSERT INTO facture VALUES ($i, $amount, $user_id, $statut[0])";
 
